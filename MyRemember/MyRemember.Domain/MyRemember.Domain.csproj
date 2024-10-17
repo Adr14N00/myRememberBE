@@ -6,4 +6,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Events\" />
+    <Folder Include="Services\" />
+    <Folder Include="Excpetions\" />
+    <Folder Include="ValueObjects\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyRemember.Shared\MyRemember.Shared.Common.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,6 +1,6 @@
 ﻿namespace MyRemember.Domain
 {
-    public class Class1
+    public class MyRememberDomainModule
     {
 
     }

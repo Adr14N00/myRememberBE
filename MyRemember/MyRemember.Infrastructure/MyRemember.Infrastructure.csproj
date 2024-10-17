@@ -6,4 +6,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Data\Auth\Config\" />
+    <Folder Include="Data\Auth\Services\" />
+    <Folder Include="Data\MyRemember\Config\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyRemember.Application\MyRemember.Application.csproj" />
+  </ItemGroup>
+
 </Project>
