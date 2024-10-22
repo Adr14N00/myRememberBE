@@ -8,7 +8,7 @@ namespace MyRemember.Domain.Entities.Auth
 {
     public class AuthUserRefreshToken: BaseEntity<Guid>
     {
-        public Guid IdUser { get; set; }
+        public Guid UserId { get; set; }
         public string Token { get; set; } = null!;
         public bool IsActive { get; set; }
         public DateTime Expires { get; set; }
@@ -19,6 +19,6 @@ namespace MyRemember.Domain.Entities.Auth
         public string? ReasonRevoked { get; set; }
         public string? ReplacedByToken { get; set; }
 
-        public virtual AuthUser IdUserNavigation { get; set; } = null!;
+        public virtual AuthUser UserIdNavigation { get; set; } = null!;
     }
 }

@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace MyRemember.Domain.Entities.Auth
 {
-    public class AuthRole: BaseEntity<int>
+    public class AuthControllerSettings : BaseEntity<int>
     {
-        public string Name { get; set; } = null!;
-
-        public virtual ICollection<AuthUser>? AuthUsers { get; set; }
+        public string? Name { get; set; }
+        public string? Config { get; set; }
     }
 }

@@ -13,14 +13,19 @@
     <Folder Include="Common\Services\" />
     <Folder Include="EventHandlers\" />
     <Folder Include="Common\Specifications\" />
-    <Folder Include="UseCases\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.10.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.10.0" />
+    <PackageReference Include="Linq.PredicateBuilder" Version="1.1.0" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.10" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MyRemember.Common\MyRemember.Common.csproj" />
     <ProjectReference Include="..\MyRemember.Domain\MyRemember.Domain.csproj" />
   </ItemGroup>
 

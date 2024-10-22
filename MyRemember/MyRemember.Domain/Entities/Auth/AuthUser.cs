@@ -13,8 +13,9 @@ namespace MyRemember.Domain.Entities.Auth
         public int IdRole { get; set; }
         public bool IsActive { get; set; }
         public bool IsPasswordSet { get; set; }
+        public Guid UserTenantId { get; set; }
 
         public virtual AuthRole IdRoleNavigation { get; set; } = null!;
-        public virtual ICollection<SbUserRefreshToken> SbUserRefreshTokens { get; set; }
+        public virtual ICollection<AuthUserRefreshToken>? AuthUserRefreshTokens { get; set; }
     }
 }
