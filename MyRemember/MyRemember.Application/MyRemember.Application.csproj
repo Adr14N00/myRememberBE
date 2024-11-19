@@ -22,11 +22,28 @@
     <PackageReference Include="Linq.PredicateBuilder" Version="1.1.0" />
     <PackageReference Include="MediatR" Version="12.4.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.10" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Localization.Abstractions" Version="9.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\MyRemember.Common\MyRemember.Common.csproj" />
     <ProjectReference Include="..\MyRemember.Domain\MyRemember.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="UseCases\Auth\Commands\Login\translations\PasswordValidator.en.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>PasswordValidator.en.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="UseCases\Auth\Commands\Login\translations\PasswordValidator.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PasswordValidator.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

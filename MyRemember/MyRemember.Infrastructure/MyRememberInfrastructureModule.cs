@@ -1,16 +1,16 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MyRemember.Application.Interfaces;
-using MyRemember.Infrastructure.Data.Auth;
 
 namespace MyRemember.Infrastructure
 {
     public static class MyRememberInfrastructureModule
     {
-        public static IServiceCollection AddPersistence(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<AuthDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("MyRememberTenantDb")));
-            services.AddScoped<IAuthDbContext, AuthDbContext>();
+            //services.AddDbContext<AuthDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("MyRememberTenantDb")));
+            //services.AddScoped<IAuthDbContext, AuthDbContext>();
 
             return services;
 

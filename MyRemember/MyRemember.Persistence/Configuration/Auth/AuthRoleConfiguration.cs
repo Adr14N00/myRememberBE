@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyRemember.Infrastructure.Data.Auth.Config
+namespace MyRemember.Persistence.Configuration.Auth
 {
     public class AuthRoleConfiguration : IEntityTypeConfiguration<AuthRole>
     {

@@ -9,7 +9,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyRemember.Infrastructure.Data.MyRemember
+namespace MyRemember.Persistence
 {
     public partial class MyRememberDbContext : DbContext, IMyRememberDbContext
     {

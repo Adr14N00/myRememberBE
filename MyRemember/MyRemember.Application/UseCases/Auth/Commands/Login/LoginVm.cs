@@ -14,7 +14,9 @@ namespace MyRemember.Application.UseCases.Auth.Commands.Login
         string? Email,
         UserRole? Role,
         string? Token,
-        string? RefreshToken,
         bool? IsActive
-    );
+    )
+    {
+        public string? RefreshToken { get; init; }
+    };
 }

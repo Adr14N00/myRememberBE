@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRemember.WebApi", "MyRemember.WebApi\MyRemember.WebApi.csproj", "{CB25F05E-DB41-4831-8F6D-962AB72A6FA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyRemember.WebApi", "MyRemember.WebApi\MyRemember.WebApi.csproj", "{CB25F05E-DB41-4831-8F6D-962AB72A6FA6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{39B3A755-7FDF-4758-AB7D-346D2826571D}"
 EndProject
@@ -13,23 +13,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{DD499047-8735-48BE-AB9C-E61EEA518543}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRemember.Shared.Common", "MyRemember.Shared\MyRemember.Shared.Common.csproj", "{D8CFED34-8929-4F1F-A5D5-185671FFA860}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyRemember.Shared.Common", "MyRemember.Shared\MyRemember.Shared.Common.csproj", "{D8CFED34-8929-4F1F-A5D5-185671FFA860}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{DFD9861A-EC67-4A7B-9DE5-9B6F719E4BB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRemember.Infrastructure", "MyRemember.Infrastructure\MyRemember.Infrastructure.csproj", "{EF47D823-07CC-4602-ABB4-6A68B2125C0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyRemember.Infrastructure", "MyRemember.Infrastructure\MyRemember.Infrastructure.csproj", "{EF47D823-07CC-4602-ABB4-6A68B2125C0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRemember.Application", "MyRemember.Application\MyRemember.Application.csproj", "{85C9B677-9CAD-44B6-B4A6-EEBF76AE8BA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyRemember.Application", "MyRemember.Application\MyRemember.Application.csproj", "{85C9B677-9CAD-44B6-B4A6-EEBF76AE8BA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRemember.Common", "MyRemember.Common\MyRemember.Common.csproj", "{8B42BEAA-164F-4840-9BBF-5574AF50C005}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyRemember.Common", "MyRemember.Common\MyRemember.Common.csproj", "{8B42BEAA-164F-4840-9BBF-5574AF50C005}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRemember.Domain", "MyRemember.Domain\MyRemember.Domain.csproj", "{C3E56F59-7394-4524-A19F-ACC7D95B8D39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyRemember.Domain", "MyRemember.Domain\MyRemember.Domain.csproj", "{C3E56F59-7394-4524-A19F-ACC7D95B8D39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRemember.UnitTests", "MyRemember.UnitTests\MyRemember.UnitTests.csproj", "{6743B95F-DFB2-45F9-BE9A-998AC56F7CF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyRemember.UnitTests", "MyRemember.UnitTests\MyRemember.UnitTests.csproj", "{6743B95F-DFB2-45F9-BE9A-998AC56F7CF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRemember.IntegrationTests", "MyRemember.IntegrationTests\MyRemember.IntegrationTests.csproj", "{93C4CF3F-8AF7-47D0-B5FC-FA407644739F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyRemember.IntegrationTests", "MyRemember.IntegrationTests\MyRemember.IntegrationTests.csproj", "{93C4CF3F-8AF7-47D0-B5FC-FA407644739F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{356CB68C-71A0-4489-B03E-1309E442B84E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRemember.Persistence", "MyRemember.Persistence\MyRemember.Persistence.csproj", "{2957FB09-7222-4D1D-BF44-9C3FC3DE6700}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{93C4CF3F-8AF7-47D0-B5FC-FA407644739F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93C4CF3F-8AF7-47D0-B5FC-FA407644739F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93C4CF3F-8AF7-47D0-B5FC-FA407644739F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2957FB09-7222-4D1D-BF44-9C3FC3DE6700}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2957FB09-7222-4D1D-BF44-9C3FC3DE6700}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2957FB09-7222-4D1D-BF44-9C3FC3DE6700}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2957FB09-7222-4D1D-BF44-9C3FC3DE6700}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,6 +88,7 @@ Global
 		{C3E56F59-7394-4524-A19F-ACC7D95B8D39} = {3E1C52A9-7DD6-4342-A278-A03FED990B81}
 		{6743B95F-DFB2-45F9-BE9A-998AC56F7CF2} = {DFD9861A-EC67-4A7B-9DE5-9B6F719E4BB4}
 		{93C4CF3F-8AF7-47D0-B5FC-FA407644739F} = {DFD9861A-EC67-4A7B-9DE5-9B6F719E4BB4}
+		{2957FB09-7222-4D1D-BF44-9C3FC3DE6700} = {FF58BE87-63BE-4366-B2B4-A470576F8A6F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6691107B-620B-43AF-98E6-8939ABA0E968}

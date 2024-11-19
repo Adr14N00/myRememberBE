@@ -2,7 +2,6 @@
 using MyRemember.Application.Interfaces;
 using MyRemember.Domain.Entities.Auth;
 using MyRemember.Domain.Entities.MyRemember;
-using MyRemember.Infrastructure.Data.MyRemember;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,13 +9,16 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyRemember.Infrastructure.Data.Auth
+namespace MyRemember.Persistence
 {
     public partial class AuthDbContext : DbContext, IAuthDbContext
     {
         public AuthDbContext(DbContextOptions<AuthDbContext> options) : base(options)
         {
         }
+
+        // Add this parameterless constructor for design-time purposes
+        public AuthDbContext() { }
 
         public virtual DbSet<AuthUser> AuthUser { get; set; } = null!;
         public virtual DbSet<AuthUserRefreshToken> AuthUserRefreshToken { get; set; } = null!;
